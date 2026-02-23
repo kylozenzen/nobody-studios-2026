@@ -15,7 +15,6 @@
         .mono { font-family: 'Space Mono', monospace; }
         .bg-grain { background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); background-attachment: fixed; }
         
-        /* Grid Layout */
         .content-grid { 
             display: grid; 
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
@@ -26,6 +25,7 @@
 
         .image-gritty { filter: grayscale(100%) contrast(140%) brightness(50%); transition: 0.5s ease; }
         .content-item:hover .image-gritty { filter: grayscale(20%) contrast(110%) brightness(85%); }
+        .hero-image { filter: grayscale(100%) contrast(130%) brightness(40%); }
         
         .badge { 
             font-size: 9px; 
@@ -40,7 +40,7 @@
 
     <nav class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center bg-black/80 backdrop-blur-md border-b border-white/5">
         <div class="mono text-[10px] tracking-[0.4em] uppercase">
-            <a href="index.html" class="hover:text-yellow-400">← Return_to_Nexus</a>
+            <a href="../index.html" class="hover:text-yellow-400">← Return_to_Nexus</a>
         </div>
         <div class="text-lg font-black uppercase tracking-tighter">
             <span class="text-yellow-400">_</span>Transmissions.
@@ -48,17 +48,22 @@
         <div class="mono text-[10px] text-yellow-400">LOG: STREAMING</div>
     </nav>
 
-    <header class="pt-40 pb-20 px-8 max-w-7xl mx-auto">
-        <div class="max-w-3xl">
+    <!-- HERO -->
+    <section class="relative h-[70vh] flex items-end overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=2000&auto=format&fit=crop" class="hero-image w-full h-full object-cover" alt="Transmissions Header">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+        <div class="relative z-20 px-8 pb-16 max-w-7xl mx-auto w-full">
             <span class="mono text-yellow-400 text-[10px] tracking-[0.5em] mb-4 block uppercase">Protocol_03</span>
-            <h1 class="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-none mb-8">The<br>Transmission.</h1>
-            <p class="serif italic text-2xl md:text-4xl text-dim leading-tight">
+            <h1 class="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-none mb-6">The<br>Transmission.</h1>
+            <p class="serif italic text-2xl md:text-3xl text-dim leading-tight max-w-2xl">
                 "High-fidelity visual assets, strategic brand architecture, and social narratives designed for the noise."
             </p>
         </div>
-    </header>
+    </section>
 
-    <main class="px-8 pb-40 max-w-7xl mx-auto">
+    <main class="px-8 pb-40 max-w-7xl mx-auto mt-16">
         <div class="content-grid">
             
             <div class="content-item bg-black p-8 group flex flex-col justify-between aspect-square md:aspect-auto">
@@ -71,7 +76,7 @@
                     <p class="text-sm text-dim mb-8">Visual storytelling that documents the build. From short-form social hooks to long-form narratives.</p>
                 </div>
                 <div class="overflow-hidden border border-white/10 aspect-video mb-6">
-                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2071" class="image-gritty w-full h-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&auto=format&fit=crop" class="image-gritty w-full h-full object-cover">
                 </div>
             </div>
 
@@ -85,7 +90,7 @@
                     <p class="text-sm text-dim mb-8">Architectural, abstract, and gritty documentation of people and places in the San Antonio shadows.</p>
                 </div>
                 <div class="overflow-hidden border border-white/10 aspect-video mb-6">
-                    <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?q=80&w=2070" class="image-gritty w-full h-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=800&auto=format&fit=crop" class="image-gritty w-full h-full object-cover">
                 </div>
             </div>
 
@@ -99,7 +104,7 @@
                     <p class="text-sm text-dim mb-8">Developing visual identities that prioritize resilience and clarity over trends. Total brand architecture.</p>
                 </div>
                 <div class="overflow-hidden border border-white/10 aspect-video mb-6">
-                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1964" class="image-gritty w-full h-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&auto=format&fit=crop" class="image-gritty w-full h-full object-cover">
                 </div>
             </div>
 
@@ -113,7 +118,7 @@
                     <p class="text-sm text-dim mb-8">Cutting through the digital static with tactical distribution and community-first frameworks.</p>
                 </div>
                 <div class="overflow-hidden border border-white/10 aspect-video mb-6">
-                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974" class="image-gritty w-full h-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&auto=format&fit=crop" class="image-gritty w-full h-full object-cover">
                 </div>
             </div>
 
