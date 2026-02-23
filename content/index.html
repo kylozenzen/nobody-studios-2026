@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_NOBODY STUDIOS. | TRANSMISSIONS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Inter:wght@400;900&family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root { --brand-yellow: #facc15; --brand-black: #0a0a0a; --text-high: #ffffff; --text-dim: rgba(255, 255, 255, 0.6); }
+        body { background-color: var(--brand-black); color: var(--text-high); font-family: 'Inter', sans-serif; }
+        .serif { font-family: 'Cormorant Garamond', serif; }
+        .mono { font-family: 'Space Mono', monospace; }
+        .bg-grain { background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); background-attachment: fixed; }
+        
+        /* Grid Layout */
+        .content-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 1px; 
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .image-gritty { filter: grayscale(100%) contrast(140%) brightness(50%); transition: 0.5s ease; }
+        .content-item:hover .image-gritty { filter: grayscale(20%) contrast(110%) brightness(85%); }
+        
+        .badge { 
+            font-size: 9px; 
+            padding: 2px 6px; 
+            border: 1px solid var(--brand-yellow); 
+            color: var(--brand-yellow); 
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body class="bg-grain">
+
+    <nav class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center bg-black/80 backdrop-blur-md border-b border-white/5">
+        <div class="mono text-[10px] tracking-[0.4em] uppercase">
+            <a href="index.html" class="hover:text-yellow-400">← Return_to_Nexus</a>
+        </div>
+        <div class="text-lg font-black uppercase tracking-tighter">
+            <span class="text-yellow-400">_</span>Transmissions.
+        </div>
+        <div class="mono text-[10px] text-yellow-400">LOG: STREAMING</div>
+    </nav>
+
+    <header class="pt-40 pb-20 px-8 max-w-7xl mx-auto">
+        <div class="max-w-3xl">
+            <span class="mono text-yellow-400 text-[10px] tracking-[0.5em] mb-4 block uppercase">Protocol_03</span>
+            <h1 class="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-none mb-8">The<br>Transmission.</h1>
+            <p class="serif italic text-2xl md:text-4xl text-dim leading-tight">
+                "High-fidelity visual assets, strategic brand architecture, and social narratives designed for the noise."
+            </p>
+        </div>
+    </header>
+
+    <main class="px-8 pb-40 max-w-7xl mx-auto">
+        <div class="content-grid">
+            
+            <div class="content-item bg-black p-8 group flex flex-col justify-between aspect-square md:aspect-auto">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="badge">LOG_01</span>
+                        <span class="mono text-[10px] text-dim">24FPS / 4K</span>
+                    </div>
+                    <h2 class="text-4xl font-black uppercase mb-4 group-hover:text-yellow-400 transition-all">Video<br>Production.</h2>
+                    <p class="text-sm text-dim mb-8">Visual storytelling that documents the build. From short-form social hooks to long-form narratives.</p>
+                </div>
+                <div class="overflow-hidden border border-white/10 aspect-video mb-6">
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2071" class="image-gritty w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="content-item bg-black p-8 group flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="badge">LOG_02</span>
+                        <span class="mono text-[10px] text-dim">RAW_ASSET</span>
+                    </div>
+                    <h2 class="text-4xl font-black uppercase mb-4 group-hover:text-yellow-400 transition-all">Photography.</h2>
+                    <p class="text-sm text-dim mb-8">Architectural, abstract, and gritty documentation of people and places in the San Antonio shadows.</p>
+                </div>
+                <div class="overflow-hidden border border-white/10 aspect-video mb-6">
+                    <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?q=80&w=2070" class="image-gritty w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="content-item bg-black p-8 group flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="badge">LOG_03</span>
+                        <span class="mono text-[10px] text-dim">SYSTEM_BUILD</span>
+                    </div>
+                    <h2 class="text-4xl font-black uppercase mb-4 group-hover:text-yellow-400 transition-all">Brand<br>Systems.</h2>
+                    <p class="text-sm text-dim mb-8">Developing visual identities that prioritize resilience and clarity over trends. Total brand architecture.</p>
+                </div>
+                <div class="overflow-hidden border border-white/10 aspect-video mb-6">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1964" class="image-gritty w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="content-item bg-black p-8 group flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="badge">LOG_04</span>
+                        <span class="mono text-[10px] text-dim">SIGNAL_REACH</span>
+                    </div>
+                    <h2 class="text-4xl font-black uppercase mb-4 group-hover:text-yellow-400 transition-all">Social<br>Strategy.</h2>
+                    <p class="text-sm text-dim mb-8">Cutting through the digital static with tactical distribution and community-first frameworks.</p>
+                </div>
+                <div class="overflow-hidden border border-white/10 aspect-video mb-6">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974" class="image-gritty w-full h-full object-cover">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="py-40 px-8 bg-yellow-400 text-black text-center">
+        <span class="mono text-[10px] font-bold uppercase tracking-[0.4em] mb-6 block">Need the Transmission?</span>
+        <h2 class="text-6xl md:text-9xl font-black uppercase tracking-tighter mb-12">Hiring_Status:<br>Available.</h2>
+        <a href="mailto:hirebencampbell@gmail.com" class="inline-block bg-black text-white px-12 py-6 font-black uppercase tracking-widest hover:scale-105 transition-transform">
+            Inquire via the Void
+        </a>
+    </section>
+
+</body>
+</html>
